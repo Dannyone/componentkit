@@ -75,4 +75,5 @@ if [ "$MODE" = "docs" ]; then
     --company-id "org.componentkit" \
     --output appledoc \
     $HEADERS
-fi
+fi502777de8b76405ebb0d22f26c5e7cd93858af95
+
