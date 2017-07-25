@@ -1,0 +1,15 @@
+os: osx
+osx_image: xcode8
+language: objective-c
+
+install:
+  - gem install xcpretty -N --no-ri --no-rdoc
+
+script:
+  - ./build.sh $BUILD_SUBCOMMAND
+
+env:
+  matrix:
+    - BUILD_SUBCOMMAND="ci-componentkit-ios"
+    - BUILD_SUBCOMMAND="ci-componentkit-tvos"
+    - BUILD_SUBCOMMAND="ci-wildeguess-ios"
